@@ -41,9 +41,13 @@ main {
     height: 100%;
 }
 
-.card__img-container img {
+.card__img-desktop {
     width: 100%;
     border-radius: 10px 0 0 10px;
+}
+
+.card__img-mobile {
+    display: none;
 }
 
 .card__info-container {
@@ -141,11 +145,15 @@ a {
         height: 100%;
     }
 
-    .card__img-container img {
+    .card__img-desktop {
+        display: none;
+    }
+
+    .card__img-mobile {
+        display: block;
         border-radius: 10px 10px 0 0;
         height: 245px;
         object-fit: cover;
-
     }
 
     .card__info-container {
